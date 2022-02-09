@@ -1,0 +1,129 @@
+section{
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+h1{
+    font-family: 'Spectral';
+    font-weight: 500;
+    font-size: 60;
+}
+
+h2{
+    font-family: 'Spectral';
+    font-weight: 500;
+    font-size: 40;
+}
+
+h3{
+    font-family: 'Spectral';
+    font-weight: 500;
+    font-size: 30;
+}
+
+p{
+    font-family: 'Mukta';
+    font-weight: 400;
+    font-size: 20;  
+}
+
+button{
+    font-family: 'Mukta';
+    font-weight: 400;
+    font-size: 20; 
+    padding: 10;
+}
+
+.myWorkImg {
+    width: 100%;
+}
+
+.gridImg1 {
+    grid-area: img1;
+}
+
+.gridImg2 {
+    grid-area: img2;
+}
+
+.gridImg3 {
+    grid-area: img3;
+}
+
+.gridText1 {
+    grid-area: text1;
+}
+
+.gridText2 {
+    grid-area: text2;
+}
+
+.gridText3 {
+    grid-area: text3;
+}
+
+.workGrid{
+    display: grid;
+    grid-template-areas: 'img1 text1 text1' 'text2 text2 img2' 'img3 text3 text3';
+    grid-template-columns: 30% 30% 30%;
+    grid-row-gap: 50px;
+    grid-column-gap: 3.3%;
+}
+
+.flexContainer{
+    display: flex;
+}
+
+.container{
+    flex-direction: row;
+    width: 30%;
+    padding:1%;
+    margin: 1%;
+}
+
+.container img{
+    display: block;
+    margin: auto;
+}
+
+.container h3{
+    text-align: center;
+}
+
+.mySkills h1{
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+
+section{
+    margin-top:8%;
+    margin-bottom:8%;
+}
+
+.workGrid{
+    display: grid;
+    flex-direction:column;
+    grid-template-rows: .8fr 1.2fr .8fr 1.2fr .8fr 1.2fr;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "img1" 
+    "text1" 
+    "img2" 
+    "text2" 
+    "img3" 
+    "text3";
+    grid-row-gap: 20px;
+    grid-column-gap: 8px; 
+    margin: 8%;
+}
+
+.flexContainer{
+    flex-direction: column;
+}
+
+.container{
+    width: 100%;
+}
+
+}
